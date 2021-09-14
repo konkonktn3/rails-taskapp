@@ -1,18 +1,38 @@
+*{
+  color: gray;
+}
+
 header {
   width: 100%;
   padding: 15px;
   margin-bottom: 30px;
-  border-bottom: 7px solid orange;
+  border-bottom: 7px solid rgb(245, 103, 157);
 }
 
 footer{
   width: 100%;
   padding: 15px;
   margin-top: 30px;
-  border-top: 7px solid orange;
+  border-top: 7px solid rgb(245, 103, 157);
+  font-size: 5px;
 }
 
 .partial {
-  border: 1px solid red;
+  border: 5px double rgba(167, 27, 155, 0.541);
   padding: 15px;
+}
+
+table th {
+  background-color: rgb(236, 188, 234);
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: rgba(255, 182, 193, 0.699);
+  padding: 10px 20px;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
 }
