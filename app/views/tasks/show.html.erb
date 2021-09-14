@@ -1,0 +1,26 @@
+<h3>スケジュールの詳細</h3>
+ 
+<table>
+  <tr>
+    <th>タイトル</th>
+    <td><%= @task.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @task.start %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @task.finish %></td>
+  </tr>
+  <tr>
+    <th>スケジュール内容</th>
+    <td><%= @task.introduction %></td>
+  </tr>
+</table>
+ 
+<div>
+  <ul>
+    <li><%= link_to "スケジュール一覧に戻る", :tasks %></li>
+  </ul>
+</div>

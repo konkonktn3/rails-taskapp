@@ -28,9 +28,15 @@
         <td><%= task.start %></td>
         <td><%= task.finish %></td>
         <td><%= task.updated_at.to_s(:datetime_jp) %></td>
-        
-        
-        
+        <td>
+          <%= link_to "詳細確認", task %>
+        </td>
+        <td>
+          <%= link_to "編集", [:edit, task] %>
+        </td>
+        <td>
+          <%= link_to "削除", task, method: :delete, data: { confirm: "スケジュールを削除しますか？" } %>
+        </td>
         
       </tr>
     <% end %>
