@@ -1,6 +1,8 @@
 <%= render "shared/partial" %>
 <h3>スケジュールの作成</h3>
 
+<%= render "shared/error", obj: @task %>
+
 <%= form_for @task do |f| %>
   <table>
     <tr>
@@ -10,12 +12,12 @@
  
     <tr>
       <th><%= f.label :start ,"いつから？" %></th>
-      <td><%= f.text_field :start %></td>
+      <td><%= f.date_select :start, {}, class: 'form-control' %></td>
     </tr>
  
     <tr>
       <th><%= f.label :finish ,"いつまで？" %></th>
-      <td><%= f.text_field :finish %></td>
+      <td><%= f.date_select :finish, {}, class: 'form-control' %></td>
     </tr>
  
     <tr>

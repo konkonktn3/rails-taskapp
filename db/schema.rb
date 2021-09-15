@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_13_080954) do
+ActiveRecord::Schema.define(version: 2021_09_14_141347) do
+
+  create_table "posts", force: :cascade do |t|
+    t.string "content"
+    t.integer "task_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
-    t.datetime "start"
-    t.datetime "finish"
+    t.date "start"
+    t.date "finish"
     t.text "introduction"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -8,11 +8,11 @@
     </tr>
     <tr>
       <th><%= f.label :start ,"いつから？" %></th>
-      <td><%= f.text_field :start %></td>
+      <td><%= f.date_select :start, {}, class: 'form-control' %></td>
     </tr>
     <tr>
       <th><%= f.label :finish ,"いつまで？" %></th>
-      <td><%= f.text_field :finish %></td>
+      <td><%= f.date_select :finish, {}, class: 'form-control' %></td>
     </tr>
     <tr>
       <th><%= f.label :introduction ,"スケジュール内容" %></th>
