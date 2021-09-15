@@ -18,8 +18,16 @@ footer{
 }
 
 .partial {
+  display: flex;
   border: 5px double rgba(167, 27, 155, 0.541);
   padding: 15px;
+  height: 320px;
+  width: 700px;
+}
+
+.box1 {
+  text-align: center;
+  padding: 50px 20px 0 20px;
 }
 
 table th {
@@ -28,7 +36,7 @@ table th {
 }
 
 table td {
-  background-color: rgba(255, 182, 193, 0.699);
+  background-color: rgba(252, 195, 203, 0.699);
   padding: 10px 20px;
 }
 

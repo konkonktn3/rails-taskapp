@@ -1,4 +1,18 @@
 <div class="partial">
-  <p>現在の時間　</p>
-  <p>スケジュールの数　</p>
+  <div class="box1">
+    <p>~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p>今日は <%= Date.today %> 
+    (<%= yo_bi = %w[日 月 火 水 木 金 土 日]
+    yo_bi[Date.today.wday] %>) </p>
+    <p>~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p>スケジュールの数　<%= Task.all.count(:id) %>件</p>
+    <p>~~~~~~~~~~~~~~~~~~~~~~</p>
+  </div>
+
+  <div class="box2">
+    <%= month_calendar do |date| %>
+      <%= date %>
+    <% end %>
+  </div>
+
 </div>

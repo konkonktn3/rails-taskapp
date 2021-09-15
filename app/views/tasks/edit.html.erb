@@ -1,10 +1,11 @@
+<%= render "shared/partial" %>
 <h3>スケジュール編集</h3>
  
 <%= form_for @task do |f| %>
   <table>
     <tr>
       <th><%= f.label :title ,"タイトル" %></th>
-      <td><%= f.text_field :title %></td>
+      <td><%= f.text_field :title, size: "40x2" %></td>
     </tr>
     <tr>
       <th><%= f.label :start ,"いつから？" %></th>
@@ -16,7 +17,7 @@
     </tr>
     <tr>
       <th><%= f.label :introduction ,"スケジュール内容" %></th>
-      <td><%= f.text_area :introduction %></td>
+      <td><%= f.text_area :introduction, size: "40x10" %></td>
     </tr>
   </table>
   <div>
