@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Schedule2</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+  <header>
+  <h1>スケジュール管理</h1>
+  <h2>日々のタスクを記入して時間をうまく管理しよう✊</h2>
+  </header>
+  
+  <%= yield %>
+
+  <footer>
+  <h1></h1>
+  </footer>
   </body>
 </html>

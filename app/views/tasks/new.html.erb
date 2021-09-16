@@ -1,0 +1,35 @@
+<%= render "shared/partial" %>
+<h3>スケジュールの作成</h3>
+
+<%= render "shared/error", obj: @task %>
+
+<%= form_for @task do |f| %>
+<table>
+  <tr>
+    <th><%= f.label :title ,"タイトル" %></th>
+    <td><%= f.text_field :title, size: "40x2" %></td>
+  </tr>
+ 
+  <tr>
+    <th><%= f.label :start ,"いつから？" %></th>
+    <td><%= f.date_select :start, {}, class: 'form-control' %></td>
+  </tr>
+ 
+  <tr>
+    <th><%= f.label :finish ,"いつまで？" %></th>
+    <td><%= f.date_select :finish, {}, class: 'form-control' %></td>
+  </tr>
+ 
+  <tr>
+    <th><%= f.label :introduction ,"スケジュールの内容" %></th>
+    <td><%= f.text_area :introduction, size: "40x10" %></td>
+  </tr>
+</table>
+ 
+<div>
+  <ul>
+    <li><%= f.submit "スケジュールを登録する"%></li>
+    <li><%= link_to "スケジュール一覧に戻る", :tasks %></li>
+  </ul>
+</div>
+<% end %>
